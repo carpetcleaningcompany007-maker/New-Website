@@ -1,357 +1,270 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-  
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: { 50:"#f5f3ff", 100:"#ede9fe", 600:"#7c3aed", 700:"#6d28d9", 900:"#3b1b8a" },
-            ink: { 900:"#070b14", 800:"#0b1220", 700:"#0f172a" }
-          },
-          boxShadow: {
-            soft:"0 12px 30px rgba(2,6,23,0.18)",
-            card:"0 24px 70px rgba(2,6,23,0.38)"
-          }
-        }
-      }
-    }
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <style>
-    body { font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif; }
-    html, body { width: 100%; max-width: 100%; overflow-x: clip; }
-    body { position: relative; }
-    * { min-width: 0; }
-    img, video, svg { max-width: 100%; height: auto; }
-    :root { scroll-padding-top: 74px; }
-    .glass { backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
-    input, select, textarea { font-size: 16px; }
-    .lift { transition: transform .18s ease, box-shadow .18s ease; }
-    .lift:hover { transform: translateY(-2px); }
-    .premium-field:focus { outline: none; box-shadow: 0 0 0 4px rgba(52,211,153,.25); border-color: rgba(16,185,129,.9); }
-    .shimmer { position: relative; overflow: hidden; }
-    .shimmer:after{
-      content:""; position:absolute; inset:-40% -60%; transform: rotate(20deg);
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,.25), transparent);
-      animation: shimmer 3.5s infinite; pointer-events:none;
-    }
-    @keyframes shimmer {
-      0% { transform: translateX(-40%) rotate(20deg); opacity:0; }
-      10% { opacity:1; }
-      50% { transform: translateX(40%) rotate(20deg); opacity:0; }
-      100% { opacity:0; }
-    }
-    @keyframes fadeUp { 0% { opacity:0; transform: translateY(16px); } 100% { opacity:1; transform: translateY(0); } }
-    @keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
-    [data-anim] { opacity: 0; transform: translateY(14px); }
-    .is-ready [data-anim="hero-title"] { animation: fadeUp 800ms ease-out forwards; }
-    .is-ready [data-anim="hero-copy"]  { animation: fadeUp 820ms ease-out 120ms forwards; }
-    .is-ready [data-anim="hero-points"]{ animation: fadeUp 860ms ease-out 180ms forwards; }
-    .is-ready [data-anim="hero-cta"]   { animation: fadeUp 880ms ease-out 240ms forwards; }
-    .is-ready [data-anim="hero-card"]  { animation: fadeUp 900ms ease-out 200ms forwards; }
-    .in-view[data-anim="reveal"] { animation: fadeUp 750ms ease-out forwards; }
-    .rev-card { transition: transform .2s ease, box-shadow .2s ease; }
-    .rev-card:hover { transform: translateY(-6px); box-shadow: 0 34px 95px rgba(2,6,23,.18); }
-    .clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-    @media (prefers-reduced-motion: reduce) {
-      [data-anim] { opacity: 1 !important; transform: none !important; animation: none !important; }
-      .shimmer:after { animation: none !important; }
-    }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Carpet Cleaning Meole Brace | The Carpet Cleaning Company</title>
+<meta name="description" content="Professional carpet cleaning in Meole Brace in the premium hotel style, supporting the wider Shrewsbury carpet cleaning SEO structure." />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://www.thecarpetcleaningcrew.co.uk/areas/meole-brace.html" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/styles.css" />
 
-  <title>Carpet Cleaning Meole Brace | The Carpet Cleaning Company</title>
-  <meta name="description" content="Professional carpet cleaning in Meole Brace with support from the wider Shrewsbury service area." />
-  <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://www.thecarpetcleaningcrew.co.uk/areas/meole-brace.html" />
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "The Carpet Cleaning Company", "url": "https://www.thecarpetcleaningcrew.co.uk/areas/meole-brace.html", "telephone": "+447802563213", "description": "Professional carpet cleaning in Meole Brace with support from the wider Shrewsbury service area.", "areaServed": ["Shrewsbury", "Bayston Hill", "Condover", "Meole Brace", "Bicton Heath", "Dorrington"], "serviceType": "Carpet Cleaning Meole Brace | The Carpet Cleaning Company"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do you cover Meole Brace?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. This page is built to support carpet cleaning searches in Meole Brace while linking back into the wider Shrewsbury service cluster."}}, {"@type": "Question", "name": "Can I still book upholstery or rug cleaning from an area page?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The area pages support the wider services, not just carpet cleaning."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "The Carpet Cleaning Company", "url": "https://www.thecarpetcleaningcrew.co.uk/areas/meole-brace.html", "telephone": "+447802563213", "description": "Professional carpet cleaning in Meole Brace in the premium hotel style, supporting the wider Shrewsbury carpet cleaning SEO structure.", "areaServed": ["Shrewsbury", "Bayston Hill", "Condover", "Meole Brace", "Bicton Heath", "Dorrington"], "serviceType": "Carpet Cleaning Meole Brace | The Carpet Cleaning Company"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why have an area page as well as a Shrewsbury page?", "acceptedAnswer": {"@type": "Answer", "text": "Area pages support the main Shrewsbury pages and widen the local SEO footprint around the town."}}, {"@type": "Question", "name": "Can I still book upholstery or rug cleaning from an area page?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The area pages support the wider service offer, not just carpet cleaning."}}]}</script>
+
 </head>
-<body class="bg-ink-900 text-slate-100 overflow-x-hidden">
-  <header class="fixed top-0 left-0 right-0 z-50 bg-emerald-900/90 glass border-b border-emerald-800/35">
-    <div class="mx-auto max-w-6xl px-4 py-1.5 flex items-center justify-between gap-4">
-      <div class="flex items-center gap-3 min-w-0">
-        <div class="leading-tight min-w-0">
-          <div class="font-extrabold text-base sm:text-lg truncate">The Carpet Cleaning Company</div>
-          <div class="text-[11px] sm:text-xs text-emerald-100/90">Shrewsbury carpet and upholstery cleaning</div>
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="../index.html">
+      <img src="https://raw.githubusercontent.com/carpetcleaningcompany007-maker/carpet-cleaning-showcase/main/ChatGPT%20Image%20Feb%204,%202026,%2012_51_48%20AM.png" alt="The Carpet Cleaning Company logo" />
+      <div>
+        <div class="brand-title">The Carpet Cleaning Company</div>
+        <div class="brand-sub">Premium carpet and upholstery cleaning</div>
+      </div>
+    </a>
+    <nav class="links">
+      <a href="../index.html">Home</a>
+      <a href="../gallery.html">Gallery</a>
+      <a href="../pages/carpet-cleaning-shrewsbury.html">Carpet Cleaning</a>
+      <a href="../pages/upholstery-cleaning-shrewsbury.html">Upholstery</a>
+      <a href="../pages/rug-cleaning-shrewsbury.html">Rug Cleaning</a>
+      <a href="../pages/moth-treatment-shrewsbury.html">Moth Treatment</a>
+      <a class="btn btn-gold" href="tel:07802563213">Call 07802 563213</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="--hero-image:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1800&q=80')">
+  <div class="hero-overlay"></div>
+  <div class="container hero-wrap">
+    <div class="hero-grid">
+      <div class="reveal">
+        <div class="eyebrow">Area Page</div>
+        <h1 class="title">Carpet Cleaning Meole Brace</h1>
+        <div class="gold-line"></div>
+        <p class="subtitle">Professional carpet cleaning in Meole Brace, built into the same premium site structure and linked back into the wider Shrewsbury service pages.</p>
+        <div class="points">
+          <div class="point"><span class="tick">✓</span><span>CRB agitation lifts embedded soil</span></div>
+          <div class="point"><span class="tick">✓</span><span>Steam cleaning up to 120 degrees for the best results</span></div>
+          <div class="point"><span class="tick">✓</span><span>Fully insured for your peace of mind</span></div>
+          <div class="point"><span class="tick">✓</span><span>Wool and synthetic safe process</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn btn-gold" href="#quote">Get my quote</a>
+          <a class="btn btn-outline" href="#reviews">Read reviews first</a>
+          <a class="btn btn-outline" href="#videos">Watch videos</a>
         </div>
       </div>
-      <div class="flex items-center gap-3">
-        <a href="tel:07802563213" class="hidden sm:inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/15 px-4 py-2 text-sm font-semibold lift">
-          <span class="inline-block h-2 w-2 rounded-full bg-emerald-300"></span>
-          07802 563213
-        </a>
+
+      <div class="hero-card reveal">
+        <h3 style="font-size:38px;">Instant Quote Request</h3>
+        <p class="subtle">Fast fixed price quote and earliest available dates</p>
+        <form id="quote" action="https://formspree.io/f/mblnzwpv" method="POST" style="margin-top:18px;">
+          <input type="hidden" name="_subject" value="New Quote Request - The Carpet Cleaning Company" />
+          <div class="grid-2">
+            <input class="field" name="postcode" placeholder="Postcode" />
+            <select class="field" name="areas"><option>1 room</option><option>2 rooms</option><option>3 rooms</option><option>4 rooms</option><option>5+</option></select>
+          </div>
+          <div style="margin-top:14px;">
+            <select class="field" name="service">
+              <option>Carpet cleaning</option><option>Upholstery cleaning</option><option>Rug cleaning</option><option>Moth treatment</option><option>Commercial carpet cleaning</option>
+            </select>
+          </div>
+          <div style="margin-top:14px;"><input class="field" name="name" placeholder="Full name" /></div>
+          <div class="grid-2" style="margin-top:14px;">
+            <input class="field" name="phone" placeholder="Phone" />
+            <input class="field" type="email" name="email" placeholder="Email" />
+          </div>
+          <div style="margin-top:14px;"><textarea class="field" rows="3" name="notes" placeholder="Stains, pets, parking, access, ideal days"></textarea></div>
+          <div style="margin-top:14px;"><button class="btn btn-gold" style="width:100%;border:none;">Get my quote</button></div>
+          <p class="subtle" style="margin-top:10px;font-size:12px;">We will contact you from 07802 563213. No obligation.</p>
+        </form>
       </div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <section class="relative pt-24 md:pt-28 pb-14 md:pb-20 overflow-hidden overflow-x-clip isolate">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(16,185,129,.25),transparent_30%),linear-gradient(to_bottom,rgba(7,11,20,.3),rgba(7,11,20,.92))]"></div>
-    <div class="absolute inset-0 opacity-20 bg-[linear-gradient(120deg,transparent_0%,rgba(255,255,255,.12)_20%,transparent_40%)] animate-pulse"></div>
 
-    <div class="relative mx-auto max-w-6xl px-4">
-      <div class="grid lg:grid-cols-2 gap-10 items-start">
-        <div class="pt-2">
-          <div data-anim="hero-title" class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/15 px-3 py-1 text-xs font-semibold text-emerald-200">Area Page</div>
-          <h1 data-anim="hero-title" class="mt-4 text-4xl md:text-5xl font-extrabold leading-tight">Carpet Cleaning Meole Brace</h1>
-          <p data-anim="hero-copy" class="mt-4 text-base md:text-lg text-slate-200 max-w-xl">Professional carpet cleaning in Meole Brace, supported by the wider Shrewsbury service area and the same premium showcase style.</p>
-
-          <div data-anim="hero-points" class="mt-5 space-y-2 text-sm text-slate-200">
-            <div class="flex items-start gap-3"><span class="mt-0.5 inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-400 text-emerald-950 font-extrabold">✓</span><span>CRB agitation lifts embedded soil</span></div>
-            <div class="flex items-start gap-3"><span class="mt-0.5 inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-400 text-emerald-950 font-extrabold">✓</span><span>Steam cleaning up to 120 degrees</span></div>
-            <div class="flex items-start gap-3"><span class="mt-0.5 inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-400 text-emerald-950 font-extrabold">✓</span><span>Fully insured professional cleaning</span></div>
-            <div class="flex items-start gap-3"><span class="mt-0.5 inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-400 text-emerald-950 font-extrabold">✓</span><span>Wool and synthetic safe process</span></div>
-          </div>
-
-          <div data-anim="hero-cta" class="mt-6 flex flex-wrap gap-3">
-            <a href="#quote" class="inline-flex items-center justify-center rounded-full bg-emerald-400 hover:bg-emerald-300 text-emerald-950 px-6 py-3 text-sm font-extrabold shadow-soft lift shimmer">Get my quote</a>
-            <a href="#reviews" class="inline-flex items-center justify-center rounded-full bg-white/10 border border-white/15 hover:bg-white/15 px-6 py-3 text-sm font-semibold lift">Read reviews first</a>
-            <a href="#videos" class="inline-flex items-center justify-center rounded-full bg-white/10 border border-white/15 hover:bg-white/15 px-6 py-3 text-sm font-semibold lift">Watch videos</a>
-          </div>
-        </div>
-
-        <div data-anim="hero-card" class="relative rounded-3xl bg-white text-slate-900 shadow-card border border-white/40 overflow-hidden lift max-w-full">
-          <div class="absolute inset-x-0 top-0 h-24 bg-gradient-to-r from-emerald-50 via-white to-emerald-50"></div>
-          <div class="relative p-6 md:p-7">
-            <div class="text-xl font-extrabold">Instant Quote Request</div>
-            <p class="mt-1 text-sm text-slate-600">Fast fixed price quote and earliest available dates</p>
-            <div id="quote" class="mt-5 grid gap-4">
-              <input class="premium-field rounded-xl border border-slate-300 px-3 py-2.5 text-sm" placeholder="Postcode" />
-              <select class="premium-field rounded-xl border border-slate-300 px-3 py-2.5 text-sm bg-white">
-                <option>Carpet cleaning</option>
-                <option>Upholstery cleaning</option>
-                <option>Rug cleaning</option>
-                <option>Moth treatment</option>
-                <option>Commercial carpet cleaning</option>
-              </select>
-              <input class="premium-field rounded-xl border border-slate-300 px-3 py-2.5 text-sm" placeholder="Full name" />
-              <input class="premium-field rounded-xl border border-slate-300 px-3 py-2.5 text-sm" placeholder="Phone number" />
-              <button class="w-full rounded-2xl bg-emerald-400 hover:bg-emerald-300 text-emerald-950 px-4 py-3.5 text-sm font-extrabold shadow-soft lift shimmer">Get my quote</button>
-            </div>
-          </div>
-        </div>
-      </div>
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Local area support page</div>
+      <h2 style="font-size:48px;">Built to strengthen the nearby area cluster</h2>
+      <div class="gold-line"></div>
+      <p>This area page links back into the wider Shrewsbury service pages while still giving nearby local searches a dedicated page to land on.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  
 
-  <section id="videos" class="py-14 bg-white text-slate-900">
-    <div class="mx-auto max-w-6xl px-4">
-      <h2 data-anim="reveal" class="text-3xl font-extrabold">Watch the results</h2>
-      <p data-anim="reveal" class="mt-2 text-slate-600">Your real showcase videos, kept in the same style.</p>
-      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
-        
-        <div data-anim="reveal" class="w-[267px] h-[476px] overflow-hidden rounded-2xl border border-slate-200 shadow-soft bg-black lift">
+<section id="videos" class="section" style="background:#fff;color:#0f172a;">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow" style="color:#047857;">Watch the results</div>
+      <h2 style="font-size:48px;">Facebook cleaning videos</h2>
+      <div class="gold-line"></div>
+      <p>Real cleaning clips embedded directly into the site.</p>
+    </div>
+    <div class="video-grid"><div class="video-wrap reveal">
           <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F61559013150413%2Fvideos%2F1899520797292791%2F&show_text=false" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
             allowfullscreen="true"
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
         </div>
-        
-
-        <div data-anim="reveal" class="w-[267px] h-[476px] overflow-hidden rounded-2xl border border-slate-200 shadow-soft bg-black lift">
+<div class="video-wrap reveal">
           <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F61559013150413%2Fvideos%2F1162016885802464%2F&show_text=false" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
             allowfullscreen="true"
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
         </div>
-        
-
-        <div data-anim="reveal" class="w-[267px] h-[476px] overflow-hidden rounded-2xl border border-slate-200 shadow-soft bg-black lift">
+<div class="video-wrap reveal">
           <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F61559013150413%2Fvideos%2F1362198414861523%2F&show_text=false" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
             allowfullscreen="true"
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-        </div>
-        
+        </div></div>
+  </div>
+</section>
+
+<section id="reviews" class="section band" style="background:#ecfdf5;color:#0f172a;">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow" style="color:#047857;">Google Reviews</div>
+      <h2 style="font-size:48px;">Customer reviews</h2>
+      <div class="gold-line"></div>
+      <p>Your review snippets are built into the site.</p>
+    </div>
+    <div class="review-grid"><article class="review reveal">
+          <div class="stars">★★★★★</div>
+          <div>Being new to the area we feel very fortunate to have chosen Paul of The Carpet Cleaning Company. From the first point of contact through to completion Paul was highly professional and very clear on pricing. We were amazed at how he managed to remove incredibly stubborn stains and saved us from replacing the carpets.</div>
+          <div class="name">Diana Roach</div>
+          <div class="meta">2 weeks ago</div>
+        </article>
+<article class="review reveal">
+          <div class="stars">★★★★★</div>
+          <div>Paul did a super job. Very thorough. Moved all the furniture, left no stone unturned, and had a lot of carpet cleaning equipment to do a good job. Very pleasant hard working chap and reasonably priced for the work involved.</div>
+          <div class="name">Carolyn Mills</div>
+          <div class="meta">a week ago</div>
+        </article>
+<article class="review reveal">
+          <div class="stars">★★★★★</div>
+          <div>Had my carpets cleaned by Paul a few days ago. He was punctual, polite and very knowledgeable. My carpets look amazing. Paul is a genuine professional and nice guy. Great experience from start to finish.</div>
+          <div class="name">Jac P</div>
+          <div class="meta">3 months ago</div>
+        </article>
+<article class="review reveal">
+          <div class="stars">★★★★★</div>
+          <div>Had Paul over today to clean my large sofa, lounge, stairs, landing and bedroom carpet. Superb service from start to finish. Everything looks brand new. Highly recommended.</div>
+          <div class="name">Suzanne Powell</div>
+          <div class="meta">3 months ago</div>
+        </article>
+<article class="review reveal">
+          <div class="stars">★★★★★</div>
+          <div>Great job done on our lime green sofas this week, all stains gone and looking so much better and brighter. Paul took great care with the fabric and in ensuring I was happy with everything before leaving.</div>
+          <div class="name">Eluned Harrison</div>
+          <div class="meta">a month ago</div>
+        </article>
+<article class="review reveal">
+          <div class="stars">★★★★★</div>
+          <div>Paul provided a fantastic service. He was polite, friendly, on time and efficient. My carpets were cleaned to a high professional standard and look amazing, so clean and bright.</div>
+          <div class="name">Patrick Maslin</div>
+          <div class="meta">5 months ago</div>
+        </article></div>
+  </div>
+</section>
+
+<section class="section" style="background:#fff;color:#0f172a;">
+  <div class="container">
+    <div class="grid-2" style="align-items:center;">
+      <div class="reveal">
+        <h2 style="font-size:44px;">100 percent satisfaction guarantee</h2>
+        <p>If you are not happy with the result in any area, it will be returned and cleaned again. If it still does not look as it should, the cost of that area will be refunded.</p>
+      </div>
+      <div class="card reveal" style="background:#ecfdf5;color:#065f46;border-color:#a7f3d0;text-align:center;">
+        <div class="eyebrow" style="color:#047857;">Satisfaction promise</div>
+        <div style="font-size:72px;font-weight:800;">100%</div>
+        <p>Simple and written in plain English</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="reviews" class="py-14 bg-emerald-50 text-slate-900">
-    <div class="mx-auto max-w-6xl px-4">
-      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-        <div>
-          <div data-anim="reveal" class="inline-flex items-center gap-2 rounded-full bg-white border border-emerald-200 px-3 py-1 text-xs font-semibold text-emerald-800 lift">Google Reviews</div>
-          <h2 data-anim="reveal" class="mt-3 text-3xl font-extrabold">Look at our amazing 5 star Google reviews</h2>
-          <p data-anim="reveal" class="mt-2 text-sm md:text-base text-slate-700 max-w-2xl">These are your real review snippets, made much more prominent in the same style as your showcase page.</p>
-        </div>
-      </div>
-      <div class="mt-8 grid md:grid-cols-2 xl:grid-cols-3 gap-6">
-        <article data-anim="reveal" class="rev-card relative rounded-3xl border border-emerald-200 bg-white shadow-soft p-6 lift">
-          <div class="flex items-start justify-between gap-4">
-            <div>
-              <div class="font-extrabold text-slate-900">Diana Roach</div>
-              <div class="text-xs text-slate-500 mt-0.5">2 weeks ago</div>
-            </div>
-            <div class="text-amber-500 text-sm">★★★★★</div>
-          </div>
-          <div class="mt-3 text-sm text-slate-700">Being new to the area we feel very fortunate to have chosen Paul of the Carpet Cleaning Company. From the 1st point of contact through to completion Paul was highly professional and very clear on pricing. We were amazed at how Paul managed to remove all the incredibly stubborn stains.</div>
-          <div class="mt-4 text-xs text-emerald-700 font-semibold">Genuine Google review</div>
-        </article>
-        
-
-        <article data-anim="reveal" class="rev-card relative rounded-3xl border border-emerald-200 bg-white shadow-soft p-6 lift">
-          <div class="flex items-start justify-between gap-4">
-            <div>
-              <div class="font-extrabold text-slate-900">Carolyn Mills</div>
-              <div class="text-xs text-slate-500 mt-0.5">a week ago</div>
-            </div>
-            <div class="text-amber-500 text-sm">★★★★★</div>
-          </div>
-          <div class="mt-3 text-sm text-slate-700">Paul did a super job. Very thorough. Moved all the furniture, left no stone unturned. Had a lot of carpet cleaning equipment to do a good job. Very pleasant hard working chap and reasonably priced for the work involved.</div>
-          <div class="mt-4 text-xs text-emerald-700 font-semibold">Genuine Google review</div>
-        </article>
-        
-
-        <article data-anim="reveal" class="rev-card relative rounded-3xl border border-emerald-200 bg-white shadow-soft p-6 lift">
-          <div class="flex items-start justify-between gap-4">
-            <div>
-              <div class="font-extrabold text-slate-900">suzanne powell</div>
-              <div class="text-xs text-slate-500 mt-0.5">3 months ago</div>
-            </div>
-            <div class="text-amber-500 text-sm">★★★★★</div>
-          </div>
-          <div class="mt-3 text-sm text-slate-700">Had Paul over today to clean my large sofa, lounge, stairs, landing and bedroom carpet. Superb service from start to finish. Everything looks brand new. Highly recommended.</div>
-          <div class="mt-4 text-xs text-emerald-700 font-semibold">Genuine Google review</div>
-        </article>
-        
-
-        <article data-anim="reveal" class="rev-card relative rounded-3xl border border-emerald-200 bg-white shadow-soft p-6 lift">
-          <div class="flex items-start justify-between gap-4">
-            <div>
-              <div class="font-extrabold text-slate-900">James Wilson</div>
-              <div class="text-xs text-slate-500 mt-0.5">4 months ago</div>
-            </div>
-            <div class="text-amber-500 text-sm">★★★★★</div>
-          </div>
-          <div class="mt-3 text-sm text-slate-700">I had my carpets cleaned by The Carpet Cleaning Company in Shrewsbury, and I’m really pleased with the results. Paul did an excellent job and managed to remove all the stains.</div>
-          <div class="mt-4 text-xs text-emerald-700 font-semibold">Genuine Google review</div>
-        </article>
-        
-
-        <article data-anim="reveal" class="rev-card relative rounded-3xl border border-emerald-200 bg-white shadow-soft p-6 lift">
-          <div class="flex items-start justify-between gap-4">
-            <div>
-              <div class="font-extrabold text-slate-900">Donna Jones</div>
-              <div class="text-xs text-slate-500 mt-0.5">a month ago</div>
-            </div>
-            <div class="text-amber-500 text-sm">★★★★★</div>
-          </div>
-          <div class="mt-3 text-sm text-slate-700">Absolutely amazing service carried out by Paul. Paul carried out a carpet clean at Shrewsbury and done an amazing job.</div>
-          <div class="mt-4 text-xs text-emerald-700 font-semibold">Genuine Google review</div>
-        </article>
-        
-
-        <article data-anim="reveal" class="rev-card relative rounded-3xl border border-emerald-200 bg-white shadow-soft p-6 lift">
-          <div class="flex items-start justify-between gap-4">
-            <div>
-              <div class="font-extrabold text-slate-900">Anne Douthwaite</div>
-              <div class="text-xs text-slate-500 mt-0.5">5 hours ago</div>
-            </div>
-            <div class="text-amber-500 text-sm">★★★★★</div>
-          </div>
-          <div class="mt-3 text-sm text-slate-700">Excellent service. Can highly recommend. Two rugs cleaned and they look brand new again. Very reasonably priced and will definitely use again.</div>
-          <div class="mt-4 text-xs text-emerald-700 font-semibold">Genuine Google review</div>
-        </article>
-        </div>
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Areas around Shrewsbury</div>
+      <h2 style="font-size:48px;">Keep the local area cluster obvious</h2>
+      <div class="gold-line"></div>
+      <p>These nearby area pages support the main Shrewsbury service pages and strengthen the local SEO structure.</p>
     </div>
-  </section>
-
-  <section class="py-12 bg-white text-slate-900">
-    <div class="mx-auto max-w-6xl px-4">
-      <h2 data-anim="reveal" class="text-2xl font-extrabold">Areas around Shrewsbury</h2>
-      <p data-anim="reveal" class="mt-2 text-slate-600">Keep the local cluster obvious and easy for Google to crawl.</p>
-      <div class="mt-6 grid md:grid-cols-2 xl:grid-cols-5 gap-4">
-        
-        <a data-anim="reveal" href="../areas/bayston-hill.html" class="rounded-2xl border border-slate-200 bg-slate-50 shadow-soft p-5 lift">
-          <div class="text-sm font-semibold text-emerald-700 uppercase">Area Page</div>
-          <div class="mt-1 text-lg font-bold text-slate-900">Carpet Cleaning Bayston Hill</div>
-          <p class="mt-2 text-sm text-slate-600">Supporting Shrewsbury SEO for nearby residential and local service searches.</p>
+    <div class="grid-4"><a class="card reveal" href="../areas/bayston-hill.html">
+          <div class="eyebrow" style="margin-bottom:8px;color:var(--gold);">Area Page</div>
+          <h3 style="font-size:30px;">Carpet Cleaning Bayston Hill</h3>
+          <p>Supporting local SEO around Shrewsbury for nearby residential searches.</p>
         </a>
-        
-
-        <a data-anim="reveal" href="../areas/condover.html" class="rounded-2xl border border-slate-200 bg-slate-50 shadow-soft p-5 lift">
-          <div class="text-sm font-semibold text-emerald-700 uppercase">Area Page</div>
-          <div class="mt-1 text-lg font-bold text-slate-900">Carpet Cleaning Condover</div>
-          <p class="mt-2 text-sm text-slate-600">Supporting Shrewsbury SEO for nearby residential and local service searches.</p>
+<a class="card reveal" href="../areas/condover.html">
+          <div class="eyebrow" style="margin-bottom:8px;color:var(--gold);">Area Page</div>
+          <h3 style="font-size:30px;">Carpet Cleaning Condover</h3>
+          <p>Supporting local SEO around Shrewsbury for nearby residential searches.</p>
         </a>
-        
-
-        <a data-anim="reveal" href="../areas/meole-brace.html" class="rounded-2xl border border-slate-200 bg-slate-50 shadow-soft p-5 lift">
-          <div class="text-sm font-semibold text-emerald-700 uppercase">Area Page</div>
-          <div class="mt-1 text-lg font-bold text-slate-900">Carpet Cleaning Meole Brace</div>
-          <p class="mt-2 text-sm text-slate-600">Supporting Shrewsbury SEO for nearby residential and local service searches.</p>
+<a class="card reveal" href="../areas/meole-brace.html">
+          <div class="eyebrow" style="margin-bottom:8px;color:var(--gold);">Area Page</div>
+          <h3 style="font-size:30px;">Carpet Cleaning Meole Brace</h3>
+          <p>Supporting local SEO around Shrewsbury for nearby residential searches.</p>
         </a>
-        
-
-        <a data-anim="reveal" href="../areas/bicton-heath.html" class="rounded-2xl border border-slate-200 bg-slate-50 shadow-soft p-5 lift">
-          <div class="text-sm font-semibold text-emerald-700 uppercase">Area Page</div>
-          <div class="mt-1 text-lg font-bold text-slate-900">Carpet Cleaning Bicton Heath</div>
-          <p class="mt-2 text-sm text-slate-600">Supporting Shrewsbury SEO for nearby residential and local service searches.</p>
+<a class="card reveal" href="../areas/bicton-heath.html">
+          <div class="eyebrow" style="margin-bottom:8px;color:var(--gold);">Area Page</div>
+          <h3 style="font-size:30px;">Carpet Cleaning Bicton Heath</h3>
+          <p>Supporting local SEO around Shrewsbury for nearby residential searches.</p>
         </a>
-        
+<a class="card reveal" href="../areas/dorrington.html">
+          <div class="eyebrow" style="margin-bottom:8px;color:var(--gold);">Area Page</div>
+          <h3 style="font-size:30px;">Carpet Cleaning Dorrington</h3>
+          <p>Supporting local SEO around Shrewsbury for nearby residential searches.</p>
+        </a></div>
+  </div>
+</section>
 
-        <a data-anim="reveal" href="../areas/dorrington.html" class="rounded-2xl border border-slate-200 bg-slate-50 shadow-soft p-5 lift">
-          <div class="text-sm font-semibold text-emerald-700 uppercase">Area Page</div>
-          <div class="mt-1 text-lg font-bold text-slate-900">Carpet Cleaning Dorrington</div>
-          <p class="mt-2 text-sm text-slate-600">Supporting Shrewsbury SEO for nearby residential and local service searches.</p>
-        </a>
-        
-      </div>
+<section class="section" style="background:#fff;color:#0f172a;">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow" style="color:#047857;">Frequently asked questions</div>
+      <h2 style="font-size:48px;">Helpful local content</h2>
+      <div class="gold-line"></div>
     </div>
-  </section>
+    <div class="faq"><div class="faq-item reveal"><h3>Why have an area page as well as a Shrewsbury page?</h3><p>Area pages support the main Shrewsbury pages and widen the local SEO footprint around the town.</p></div>
+<div class="faq-item reveal"><h3>Can I still book upholstery or rug cleaning from an area page?</h3><p>Yes. The area pages support the wider service offer, not just carpet cleaning.</p></div></div>
+  </div>
+</section>
 
-  <section class="py-12 bg-white text-slate-900">
-    <div class="mx-auto max-w-6xl px-4">
-      <h2 data-anim="reveal" class="text-2xl font-extrabold">Shrewsbury map</h2>
-      <div data-anim="reveal" class="mt-5 rounded-2xl overflow-hidden border border-slate-200 shadow-soft">
-        <iframe src="https://www.google.com/maps?q=Shrewsbury&output=embed" width="100%" height="380" style="border:0" loading="lazy"></iframe>
-      </div>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>The Carpet Cleaning Company</h3>
+      <div class="small">Carpet and upholstery cleaning in Shrewsbury and nearby areas</div>
     </div>
-  </section>
-
-  <section class="py-12 bg-emerald-50 text-slate-900">
-    <div class="mx-auto max-w-6xl px-4">
-      <h2 data-anim="reveal" class="text-2xl font-extrabold">Frequently asked questions</h2>
-      <div class="mt-6 grid gap-4">
-        <div data-anim="reveal" class="rounded-2xl border border-slate-200 bg-white shadow-soft p-6"><h3 class="text-xl font-bold text-slate-900">Do you cover Meole Brace?</h3><p class="mt-2 text-sm text-slate-700">Yes. This page is built to support carpet cleaning searches in Meole Brace while linking back into the wider Shrewsbury service cluster.</p></div>
-<div data-anim="reveal" class="rounded-2xl border border-slate-200 bg-white shadow-soft p-6"><h3 class="text-xl font-bold text-slate-900">Can I still book upholstery or rug cleaning from an area page?</h3><p class="mt-2 text-sm text-slate-700">Yes. The area pages support the wider services, not just carpet cleaning.</p></div>
-      </div>
+    <div>
+      <h3>Quick Links</h3>
+      <a href="../gallery.html">Gallery</a>
+      <a href="../pages/carpet-cleaning-shrewsbury.html">Carpet Cleaning Shrewsbury</a>
+      <a href="../pages/upholstery-cleaning-shrewsbury.html">Upholstery Cleaning Shrewsbury</a>
+      <a href="../pages/rug-cleaning-shrewsbury.html">Rug Cleaning Shrewsbury</a>
     </div>
-  </section>
-
-  <footer class="py-10 bg-ink-900 border-t border-white/10">
-    <div class="mx-auto max-w-6xl px-4 flex flex-col md:flex-row items-center justify-between gap-3 text-sm">
-      <div class="text-slate-200">
-        <div class="font-semibold">The Carpet Cleaning Company</div>
-        <div class="text-xs text-slate-400">Carpet and upholstery cleaning in Shrewsbury and nearby areas</div>
-      </div>
-      <div class="text-xs text-slate-500">© <span id="year">2025</span> The Carpet Cleaning Company. All rights reserved.</div>
+    <div>
+      <h3>Contact</h3>
+      <a href="tel:07802563213">07802 563213</a>
+      <a href="#quote">Get a quote</a>
+      <div class="small">© <span id="year"></span> The Carpet Cleaning Company</div>
     </div>
-  </footer>
-  
-  <script>
-    document.getElementById("year") && (document.getElementById("year").textContent = new Date().getFullYear());
-    window.addEventListener("load", () => document.documentElement.classList.add("is-ready"));
-    (function () {
-      const els = Array.from(document.querySelectorAll('[data-anim="reveal"]'));
-      if (!els.length) return;
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.classList.add("in-view");
-            io.unobserve(e.target);
-          }
-        });
-      }, { threshold: 0.14 });
-      els.forEach(el => io.observe(el));
-    })();
-  </script>
+  </div>
+</footer>
 
+<div class="float-actions">
+  <a class="float-btn" style="background:#25D366;color:#fff;" href="https://wa.me/447802563213?text=Hi%20Paul%2C%20I%27d%20like%20a%20quote%20please." target="_blank" rel="noopener">💬</a>
+  <a class="float-btn" style="background:#34d399;color:#052e16;" href="tel:07802563213">☎</a>
+</div>
+
+<script src="../assets/site.js"></script>
 </body>
 </html>
