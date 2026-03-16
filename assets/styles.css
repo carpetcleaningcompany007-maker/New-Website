@@ -150,82 +150,44 @@ ul{margin:0;padding-left:18px}
 
 
 
-/* === NAV/HERO FIXES === */
-.nav,
-header.nav,
-.site-header,
-header{
-  min-height: 0 !important;
+/* === AREA HUB / 50 PAGE CLUSTER === */
+.area-hub-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:20px;
 }
-.nav-inner,
-.header-inner,
-.site-header-inner{
-  padding-top: 8px !important;
-  padding-bottom: 8px !important;
-  align-items: center !important;
+.area-pill{
+  display:block;
+  padding:18px 18px;
+  border-radius:20px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(201,169,97,.16);
+  box-shadow:0 12px 30px rgba(0,0,0,.16);
 }
-.brand,
-.logo-wrap,
-.site-brand{
-  gap: 10px !important;
-  align-items: center !important;
+.area-pill:hover{
+  transform:translateY(-2px);
+  transition:.2s ease;
+  border-color:rgba(201,169,97,.38);
 }
-.brand img,
-.logo,
-.site-logo,
-header img{
-  height: 44px !important;
-  width: auto !important;
-  max-height: 44px !important;
-  object-fit: contain !important;
+.area-pill strong{
+  display:block;
+  font-size:20px;
+  margin-bottom:6px;
+  color:var(--gold-soft, #ead8ae);
 }
-.brand-title{
-  font-size: 16px !important;
-  line-height: 1.05 !important;
+.notice-band{
+  background:#ecfdf5;
+  color:#0f172a;
+  border-top:1px solid #a7f3d0;
+  border-bottom:1px solid #a7f3d0;
 }
-.brand-sub{
-  font-size: 11px !important;
-  line-height: 1.1 !important;
+.notice-band .container{
+  padding-top:20px;
+  padding-bottom:20px;
 }
-.links,
-.nav-links{
-  gap: 14px !important;
+@media (max-width:980px){
+  .area-hub-grid{grid-template-columns:1fr 1fr;}
 }
-.hero,
-.hero-wrap,
-.hero-grid{
-  min-height: 0 !important;
-}
-.hero-wrap{
-  padding-top: 42px !important;
-  padding-bottom: 48px !important;
-}
-.hero-grid{
-  align-items: start !important;
-}
-.hero .title,
-.hero h1{
-  margin-top: 0 !important;
-}
-.hero-card{
-  margin-top: 0 !important;
-}
-@media (max-width: 980px){
-  .nav-inner,
-  .header-inner,
-  .site-header-inner{
-    padding-top: 6px !important;
-    padding-bottom: 6px !important;
-  }
-  .brand img,
-  .logo,
-  .site-logo,
-  header img{
-    height: 36px !important;
-    max-height: 36px !important;
-  }
-  .hero-wrap{
-    padding-top: 28px !important;
-    padding-bottom: 36px !important;
-  }
+@media (max-width:640px){
+  .area-hub-grid{grid-template-columns:1fr;}
 }
