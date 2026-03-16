@@ -1,33 +1,158 @@
-<!DOCTYPE html>
-<html lang="en-GB">
+<!doctype html>
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Carpet Cleaning Much Wenlock | The Carpet Cleaning Company</title>
-  <meta name="description" content="Professional carpet cleaning, upholstery cleaning, rug cleaning, moth treatment and commercial carpet care in Much Wenlock and nearby areas.">
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://www.thecarpetcleaningcrew.co.uk/much-wenlock/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/styles.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Carpet Cleaning in Much Wenlock | The Carpet Cleaning Company</title>
+<meta name="description" content="Professional carpet cleaning in Much Wenlock with upholstery, rug cleaning and specialist treatment options." />
+
+  <!-- Google tag (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R9CFDLD03L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-R9CFDLD03L');
+  </script>
+  <!-- Google Ads tag (AW) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17385772946"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17385772946');
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { 50:"#f5f3ff", 100:"#ede9fe", 600:"#7c3aed", 700:"#6d28d9", 900:"#3b1b8a" },
+            ink: { 900:"#070b14", 800:"#0b1220", 700:"#0f172a" }
+          },
+          boxShadow: {
+            soft:"0 12px 30px rgba(2,6,23,0.18)",
+            card:"0 24px 70px rgba(2,6,23,0.38)"
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif; }
+    html, body { width: 100%; max-width: 100%; overflow-x: clip; }
+    * { min-width: 0; }
+    img, video, svg, iframe { max-width: 100%; }
+    :root { scroll-padding-top: 74px; }
+    .glass { backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+    .lift { transition: transform .18s ease, box-shadow .18s ease; }
+    .lift:hover { transform: translateY(-2px); }
+    .premium-field:focus { outline: none; box-shadow: 0 0 0 4px rgba(52,211,153,.25); border-color: rgba(16,185,129,.9); }
+    .shimmer { position: relative; overflow: hidden; }
+    .shimmer:after{ content:""; position:absolute; inset:-40% -60%; transform: rotate(20deg); background: linear-gradient(90deg, transparent, rgba(255,255,255,.25), transparent); animation: shimmer 3.5s infinite; pointer-events:none; }
+    @keyframes shimmer { 0% { transform: translateX(-40%) rotate(20deg); opacity:0; } 10% { opacity:1; } 50% { transform: translateX(40%) rotate(20deg); opacity:0; } 100% { opacity:0; } }
+    [data-anim] { opacity: 0; transform: translateY(14px); }
+    .in-view[data-anim="reveal"], .is-ready [data-anim^="hero"] { opacity:1; transform:none; transition: all .7s ease; }
+    .clamp-3 { display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+    @media (prefers-reduced-motion: reduce) { [data-anim] { opacity:1!important; transform:none!important; } .shimmer:after { animation:none!important; } }
+  </style>
+
 </head>
-<body>
-<header class="nav"><div class="container nav-inner"><a class="brand" href="../index.html">The Carpet Cleaning Company</a><nav class="links">
-        <a href="../index.html">Home</a>
-        <a href="../fibrelife.html">FibreLife</a>
-        <a href="../pages/carpet-cleaning-shrewsbury.html">Carpet Cleaning</a>
-        <a href="../pages/upholstery-cleaning-shrewsbury.html">Upholstery</a>
-        <a href="../pages/rug-cleaning-shrewsbury.html">Rug Cleaning</a>
-        <a href="../pages/moth-treatment-shrewsbury.html">Moth Treatment</a>
-        <a href="../pages/areas.html">Areas</a>
-        <a class="btn btn-gold" href="tel:07802563213">Call 07802 563213</a>
-      </nav></div></header>
+<body class="bg-ink-900 text-slate-100 overflow-x-hidden">
+<div class="pointer-events-none fixed inset-0 z-[1] opacity-[0.06] mix-blend-overlay"
+style="background-image:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.9%22 numOctaves=%222%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22400%22 height=%22400%22 filter=%22url(%23n)%22 opacity=%220.25%22/%3E%3C/svg%3E');"></div>
 
-<section class="town-hero"><div class="container"><div class="breadcrumbs"><a href="../index.html">Home</a><span>•</span><a href="../pages/areas.html">Areas</a><span>•</span><span>Much Wenlock</span></div><p class="eyebrow">Local area page</p><h1 class="title" style="font-size:clamp(46px,7vw,82px)">Carpet cleaning in Much Wenlock</h1><div class="gold-line"></div><p class="subtitle">Luxury local landing page for carpet cleaning, upholstery cleaning, rug cleaning, certified moth treatment and commercial carpet care in Much Wenlock.</p></div></section>
-<section class="section"><div class="container content-grid"><div><div class="panel"><h2>Professional carpet cleaning in Much Wenlock</h2><div class="gold-line"></div><p>If you are looking for carpet cleaning in Much Wenlock, this page is designed to give you a proper local route into the wider website rather than a thin placeholder. We provide professional carpet cleaning, sofa and upholstery cleaning, rug cleaning, specialist stain removal, certified moth treatment and commercial carpet cleaning for customers in Much Wenlock and nearby areas such as Cressage, Broseley, Buildwas. That means the page is relevant to the search area while still linking back into the main Shrewsbury service pages for broader detail.</p><p>Homes in Much Wenlock often need attention in the places that see the most daily use. Hallways, lounge carpets, stairs, landings, family room rugs and fabric seating all collect dry soil and everyday grime over time. A proper professional clean can make the room look brighter, smell fresher and feel better cared for. For many households the aim is not simply to remove visible marks but to improve the overall presentation of the home without replacing perfectly serviceable carpets and furnishings.</p><p>We also clean upholstery and rugs in Much Wenlock, which is especially useful when the whole room needs resetting together. Sofas, armchairs and rugs can hold dust, body oils, food spills and pet related mess just as easily as carpets do. Booking these services together often gives a much stronger result because the flooring and soft furnishings are freshened in one visit. Where there are wool carpets or rugs, certified moth treatment may also be an important service, particularly in rooms that are used less often or where signs of textile pest activity have started to appear.</p><p>This Much Wenlock page also supports local SEO by linking to the main Shrewsbury carpet cleaning pages and to nearby towns. That stronger local structure helps customers move around the site naturally and gives search engines a clearer understanding of the service area. Whether the job is a straightforward residential carpet clean, sofa and upholstery cleaning, rug care, specialist moth treatment or a commercial carpet cleaning enquiry, this page is here to make that local route much clearer.</p></div>
-<div class="panel" style="margin-top:24px"><h2>Services available in Much Wenlock</h2><div class="gold-line"></div><ul class="list"><li><a href="../pages/carpet-cleaning-shrewsbury.html">Residential carpet cleaning</a> for hallways, lounges, stairs, bedrooms and rental properties</li><li><a href="../pages/upholstery-cleaning-shrewsbury.html">Sofa and upholstery cleaning</a> for family seating and fabric furniture</li><li><a href="../pages/rug-cleaning-shrewsbury.html">Rug cleaning</a> for everyday household rugs and statement pieces</li><li><a href="../pages/moth-treatment-shrewsbury.html">Certified moth treatment</a> for wool carpets and rugs</li><li><a href="../pages/commercial-carpet-cleaning-shrewsbury.html">Commercial carpet cleaning</a> for offices and presentation led spaces</li></ul></div>
-<div class="map-wrap"><iframe src="https://www.google.com/maps?q=Much+Wenlock&output=embed" loading="lazy"></iframe></div></div>
-<aside class="sticky-box"><div class="panel"><h3>Nearby links</h3><ul class="list"><li><a href="shrewsbury.html">Shrewsbury</a></li><li><a href="bayston-hill.html">Bayston Hill</a></li><li><a href="meole-brace.html">Meole Brace</a></li><li><a href="bicton-heath.html">Bicton Heath</a></li><li><a href="condover.html">Condover</a></li><li><a href="dorrington.html">Dorrington</a></li><li><a href="church-stretton.html">Church Stretton</a></li><li><a href="bridgnorth.html">Bridgnorth</a></li></ul></div><div class="panel" style="margin-top:20px"><img src="https://raw.githubusercontent.com/carpetcleaningcompany007-maker/carpet-cleaning-showcase/main/Satisfaction-Guarantee.webp" alt="Satisfaction guarantee badge"><p style="margin-top:14px">Local service page for Much Wenlock with stronger copy, internal links and a map embed.</p></div><div class="panel" style="margin-top:20px"><a class="btn btn-gold" href="tel:07802563213">Call 07802 563213</a><p style="margin-top:16px">Ask about carpets, upholstery, rugs, moth treatment or commercial cleaning in Much Wenlock.</p></div></aside></div></section>
+  <header class="fixed top-0 left-0 right-0 z-50 bg-emerald-900/90 glass border-b border-emerald-800/35">
+    <div class="mx-auto max-w-6xl px-4 py-1.5 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3 min-w-0">
+        <img src="https://raw.githubusercontent.com/carpetcleaningcompany007-maker/carpet-cleaning-showcase/main/ChatGPT%20Image%20Feb%204,%202026,%2012_51_48%20AM.png" class="h-14 sm:h-20 w-auto object-contain shrink-0" alt="The Carpet Cleaning Company" />
+        <div class="leading-tight min-w-0">
+          <div class="font-extrabold text-base sm:text-lg truncate">The Carpet Cleaning Company</div>
+          <div class="text-[11px] sm:text-xs text-emerald-100/90">Carpet, upholstery, rug, moth treatment and commercial cleaning</div>
+        </div>
+      </div>
+      <div class="hidden lg:flex items-center gap-5 text-sm font-semibold text-slate-100">
+        <a href="../index.html" class="hover:text-emerald-300">Home</a>
+        <a href="../pages/services.html" class="hover:text-emerald-300">Services</a>
+        <a href="../pages/areas.html" class="hover:text-emerald-300">Areas</a>
+        <a href="../fibrelife.html" class="hover:text-emerald-300">FibreLife</a>
+        <a href="tel:07802563213" class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/15 px-4 py-2 text-sm font-semibold lift">
+          <span class="inline-block h-2 w-2 rounded-full bg-emerald-300"></span>
+          07802 563213
+        </a>
+      </div>
+    </div>
+  </header>
+    
 
-<footer class="footer"><div class="container footer-grid"><div><h3>The Carpet Cleaning Company</h3><div class="small">Professional carpet cleaning, upholstery cleaning, rug cleaning, certified moth treatment, specialist stain removal and commercial carpet care across Shrewsbury and surrounding towns.</div></div><div><h3>Quick Links</h3><a href="../pages/carpet-cleaning-shrewsbury.html">Carpet Cleaning Shrewsbury</a><a href="../pages/upholstery-cleaning-shrewsbury.html">Upholstery Cleaning Shrewsbury</a><a href="../pages/rug-cleaning-shrewsbury.html">Rug Cleaning Shrewsbury</a><a href="../pages/moth-treatment-shrewsbury.html">Moth Treatment Shrewsbury</a><a href="../pages/areas.html">Areas We Cover</a></div><div><h3>Contact</h3><a href="tel:07802563213">07802 563213</a><a href="https://www.thecarpetcleaningcrew.co.uk">thecarpetcleaningcrew.co.uk</a><div class="small">© <span id="year"></span> The Carpet Cleaning Company</div></div></div></footer><script src="../assets/site.js"></script></body></html>
+<section class="relative pt-28 pb-16 overflow-hidden isolate">
+  <div class="absolute inset-0 bg-gradient-to-b from-emerald-950 via-ink-900 to-ink-900"></div>
+  <div class="absolute left-0 top-24 w-[30rem] h-[30rem] rounded-full bg-emerald-500/10 blur-3xl"></div>
+  <div class="relative mx-auto max-w-6xl px-4 grid lg:grid-cols-[1.1fr_.9fr] gap-10 items-center">
+    <div>
+      <div class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/10 px-3 py-1 text-xs font-semibold text-emerald-200">Area page</div>
+      <h1 class="mt-4 text-4xl md:text-5xl font-extrabold">Carpet cleaning in Much Wenlock</h1>
+      <p class="mt-4 text-slate-200 max-w-2xl">Premium carpet, upholstery, rug and specialist cleaning services in Much Wenlock. This page is written to support local SEO while still looking and feeling like the same luxury site experience as the homepage.</p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="../index.html#heroQuoteForm" class="rounded-full bg-emerald-400 hover:bg-emerald-300 text-emerald-950 px-6 py-3 text-sm font-extrabold shadow-soft lift shimmer">Get my quote</a>
+        <a href="https://maps.google.com/?q=Much+Wenlock" target="_blank" rel="noopener" class="rounded-full bg-white/10 border border-white/15 hover:bg-white/15 px-6 py-3 text-sm font-semibold lift">Open map</a>
+      </div>
+    </div>
+    <div class="rounded-3xl overflow-hidden border border-white/10 bg-white/5 shadow-card p-8">
+      <img src="https://raw.githubusercontent.com/carpetcleaningcompany007-maker/carpet-cleaning-showcase/main/Wand_4748.png" alt="Carpet cleaning in Much Wenlock" class="w-full object-contain" />
+    </div>
+  </div>
+</section>
+
+<section class="py-14 bg-white text-slate-900">
+  <div class="mx-auto max-w-6xl px-4 grid lg:grid-cols-[1.2fr_.8fr] gap-10">
+    <div>
+      <h2 class="text-3xl font-extrabold">A stronger local landing page for Much Wenlock</h2>
+      <p class="mt-4 text-slate-700">This page is now based around your preferred homepage style rather than sitting on a separate, uglier design. That means the area pages can still be useful for SEO without looking like cheap doorway pages. The page headline, the opening paragraph and the internal links all tell Google that this is a real location page connected to the wider carpet cleaning business. At the same time, the visual design still feels premium enough for a genuine customer to trust it.</p>
+      <p class="mt-4 text-slate-700">For local SEO, the page can naturally talk about carpet cleaning in Much Wenlock, sofa and upholstery cleaning in Much Wenlock, rug cleaning in Much Wenlock, stain removal for homes and rental properties, and certified moth treatment where wool carpets or rugs are affected. Those service mentions help the page support more than one query while still staying clearly focused on the town itself. The important thing is that the content reads naturally and feels written for a real local customer.</p>
+      <p class="mt-4 text-slate-700">This page should also support the pages around it. Someone searching for carpet cleaning in Much Wenlock may live nearby, compare surrounding places or want to learn more about a specific service. That is why the best structure is to link out to nearby area pages and the core service pages. It builds a stronger internal link network and gives Google a clearer picture of your service area. More importantly, it makes the site easier to use, which helps enquiries as well.</p>
+      <p class="mt-4 text-slate-700">Because you do more than basic carpet cleaning, this page can also mention the premium difference in the process. You can talk about pre inspection, appropriate cleaning chemistry, agitation where needed, hot water extraction and a satisfaction guarantee. That sort of wording makes the page stronger commercially. It sounds like a real specialist service rather than a generic local listing. Done properly, pages like this can support rankings for multiple long tail searches without ruining the look of the website.</p>
+    </div>
+    <div class="space-y-6">
+      <div class="rounded-3xl border border-emerald-200 bg-emerald-50 p-6 shadow-soft">
+        <h3 class="text-xl font-extrabold">Related services</h3>
+        <p class="mt-3 text-sm text-slate-700"><a class="underline decoration-emerald-400/50 hover:text-emerald-300" href="../pages/carpet-cleaning.html">Carpet Cleaning</a> · <a class="underline decoration-emerald-400/50 hover:text-emerald-300" href="../pages/upholstery-cleaning.html">Upholstery Cleaning</a> · <a class="underline decoration-emerald-400/50 hover:text-emerald-300" href="../pages/rug-cleaning.html">Rug Cleaning</a> · <a class="underline decoration-emerald-400/50 hover:text-emerald-300" href="../pages/moth-treatment.html">Certified Moth Treatment</a></p>
+      </div>
+      <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-soft">
+        <h3 class="text-xl font-extrabold">Nearby pages</h3>
+        <p class="mt-3 text-sm text-slate-700"><a class="underline decoration-emerald-400/50 hover:text-emerald-300" href="shrewsbury.html">Shrewsbury</a> · <a class="underline decoration-emerald-400/50 hover:text-emerald-300" href="ludlow.html">Ludlow</a> · <a class="underline decoration-emerald-400/50 hover:text-emerald-300" href="hereford.html">Hereford</a> · <a class="underline decoration-emerald-400/50 hover:text-emerald-300" href="leominster.html">Leominster</a> · <a class="underline decoration-emerald-400/50 hover:text-emerald-300" href="tenbury-wells.html">Tenbury Wells</a> · <a class="underline decoration-emerald-400/50 hover:text-emerald-300" href="church-stretton.html">Church Stretton</a></p>
+      </div>
+      <div class="rounded-3xl overflow-hidden border border-slate-200 shadow-soft bg-white">
+        <iframe title="Map of Much Wenlock" src="https://www.google.com/maps?q=Much+Wenlock&output=embed" class="w-full h-64 border-0"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="py-10 bg-ink-900 border-t border-white/10">
+  <div class="mx-auto max-w-6xl px-4 flex flex-col md:flex-row items-center justify-between gap-3 text-sm">
+    <div class="text-slate-200">
+      <div class="font-semibold">The Carpet Cleaning Company</div>
+      <div class="text-xs text-slate-400">Professional carpet and upholstery cleaning across Ludlow, Shrewsbury, Hereford and surrounding areas</div>
+    </div>
+    <div class="text-xs text-slate-500">© <span id="year">2026</span> The Carpet Cleaning Company. All rights reserved.</div>
+  </div>
+</footer>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+window.addEventListener("load",()=>document.documentElement.classList.add("is-ready"));
+(function(){
+  const els=[...document.querySelectorAll('[data-anim="reveal"], [data-anim^="hero"]')];
+  if(!els.length) return;
+  const io=new IntersectionObserver((entries)=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in-view"); io.unobserve(e.target);}}),{threshold:0.12});
+  els.forEach(el=>io.observe(el));
+})();
+</script>
+
+</body>
+</html>
