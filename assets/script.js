@@ -1,29 +1,15 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-  const toggle = document.querySelector('.menu-toggle');
+  const btn = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.site-nav');
-  if (toggle && nav) {
-    toggle.addEventListener('click', () => {
-      const open = nav.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', String(open));
-    });
-  }
-
-  document.querySelectorAll('[data-quote-form]').forEach(form => {
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      const data = new FormData(form);
-      const name = data.get('name') || '';
-      const phone = data.get('phone') || '';
-      const email = data.get('email') || '';
-      const postcode = data.get('postcode') || '';
-      const service = data.get('service') || '';
-      const message = data.get('message') || '';
-      const subject = encodeURIComponent(`Quote Request - ${service || 'JW Carpet Care'}`);
-      const body = encodeURIComponent(
-`Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nPostcode / Area: ${postcode}\nService Needed: ${service}\n\nDetails:\n${message}`
-      );
-      window.location.href = `mailto:infojwcarpetcare@gmail.com?subject=${subject}&body=${body}`;
-    });
+  if (btn && nav) btn.addEventListener('click', () => {const open=nav.classList.toggle('open');btn.setAttribute('aria-expanded', open?'true':'false');});
+  const form = document.querySelector('#quote-form');
+  if (form) form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const lines = [`Name: ${data.get('name')||''}`,`Phone: ${data.get('phone')||''}`,`Email: ${data.get('email')||''}`,`Town: ${data.get('town')||''}`,`Service: ${data.get('service')||''}`,`Property Type: ${data.get('property')||''}`,`Message: ${data.get('message')||''}`];
+    const subject = encodeURIComponent(`Quote Request - ${data.get('town') || 'JW Carpet Care website'}`);
+    const body = encodeURIComponent(lines.join('\n'));
+    window.location.href = `mailto:infojwcarpetcare@gmail.com?subject=${subject}&body=${body}`;
   });
 });
