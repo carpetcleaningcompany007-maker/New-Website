@@ -1,38 +1,35 @@
 
-const menuToggle = document.querySelector('.menu-toggle');
-const siteNav = document.querySelector('.site-nav');
-if(menuToggle && siteNav){
-  menuToggle.addEventListener('click', ()=>{
-    const open = siteNav.classList.toggle('open');
-    menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
-}
-document.querySelectorAll('.dropbtn').forEach(btn=>{
-  btn.addEventListener('click', e=>{
-    if(window.innerWidth <= 760){
-      e.preventDefault();
-      btn.parentElement.classList.toggle('open');
-    }
+document.querySelector('.menu-toggle')?.addEventListener('click', function(){
+  const nav = document.getElementById('site-nav');
+  const open = nav.classList.toggle('open');
+  this.setAttribute('aria-expanded', open ? 'true' : 'false');
+});
+document.querySelectorAll('.dropbtn').forEach(btn => {
+  btn.addEventListener('click', function(e){
+    e.preventDefault();
+    const parent = this.parentElement;
+    document.querySelectorAll('.dropdown').forEach(dd => { if(dd!==parent) dd.classList.remove('open'); });
+    parent.classList.toggle('open');
   });
 });
-
-const form = document.querySelector('[data-quote-form]');
-if(form){
-  form.addEventListener('submit', e=>{
+document.addEventListener('click', function(e){
+  if(!e.target.closest('.dropdown')) document.querySelectorAll('.dropdown').forEach(dd => dd.classList.remove('open'));
+});
+document.querySelectorAll('[data-quote-form]').forEach(form => {
+  form.addEventListener('submit', function(e){
     e.preventDefault();
-    const fd = new FormData(form);
+    const data = new FormData(form);
     const body = [
-      `Name: ${fd.get('name') || ''}`,
-      `Phone: ${fd.get('phone') || ''}`,
-      `Email: ${fd.get('email') || ''}`,
-      `Postcode / area: ${fd.get('postcode') || ''}`,
-      `Service needed: ${fd.get('service') || ''}`,
+      'Name: ' + (data.get('name') || ''),
+      'Phone: ' + (data.get('phone') || ''),
+      'Email: ' + (data.get('email') || ''),
+      'Area/Postcode: ' + (data.get('postcode') || ''),
+      'Service needed: ' + (data.get('service') || ''),
       '',
-      'What needs cleaning:',
-      `${fd.get('message') || ''}`
+      'Details:',
+      (data.get('message') || '')
     ].join('\n');
-    const subject = encodeURIComponent('Quote Request - JW Carpet Care');
-    const mailto = `mailto:infojwcarpetcare@gmail.com?subject=${subject}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailto;
+    const url = 'mailto:infojwcarpetcare@gmail.com?subject=' + encodeURIComponent('Quote request - JW Carpet Care') + '&body=' + encodeURIComponent(body);
+    window.location.href = url;
   });
-}
+});
