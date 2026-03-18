@@ -349,8 +349,7 @@ h2{
 
 .service-card-top{
   height:110px;
-  background:
-    linear-gradient(135deg, rgba(29,78,216,.94), rgba(15,23,42,.96));
+  background:linear-gradient(135deg, rgba(29,78,216,.94), rgba(15,23,42,.96));
 }
 
 .service-card-body{
