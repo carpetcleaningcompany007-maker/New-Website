@@ -1,1 +1,6 @@
-document.addEventListener("DOMContentLoaded",()=>{const toggle=document.querySelector('.mobile-toggle');const menu=document.querySelector('.menu');if(toggle&&menu){toggle.addEventListener('click',()=>menu.classList.toggle('open'));document.querySelectorAll('.dropbtn').forEach(btn=>btn.addEventListener('click',e=>{if(window.innerWidth<=760){e.preventDefault();btn.parentElement.classList.toggle('open')}}))}});
+
+document.addEventListener('click', e => {
+  const t = e.target;
+  if (t.classList.contains('mobile-toggle')) document.querySelector('.menu').classList.toggle('open');
+  if (t.classList.contains('dropbtn')) t.parentElement.classList.toggle('open');
+});
