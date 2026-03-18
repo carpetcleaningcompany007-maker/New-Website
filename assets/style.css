@@ -192,3 +192,101 @@ html,body{overflow-x:hidden}
   .card img,.mini-card img,.gallery img,.service-tile img{height:190px}
   .mapwrap iframe{height:260px}
 }
+
+
+
+
+/* Mobile rebuild */
+@media (max-width: 760px){
+  .topbar{display:none}
+  header{position:sticky;top:0;background:rgba(10,18,35,.94);backdrop-filter:blur(8px);z-index:80}
+  .nav{padding:10px 0;min-height:76px}
+  .brand img{height:54px;width:auto;display:block}
+  .mobile-toggle{display:block;padding:10px 14px;font-weight:700;min-width:86px;border-radius:14px}
+  .menu{display:none;position:absolute;left:12px;right:12px;top:100%;background:#0f172a;border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:12px;box-shadow:0 14px 32px rgba(0,0,0,.24)}
+  .menu.open{display:flex;flex-direction:column;gap:6px}
+  .drop{width:100%}
+  .dropbtn{width:100%;text-align:left;padding:12px 10px}
+  .dropmenu{position:static;display:none;box-shadow:none;border:none;padding:0 0 6px 10px;background:transparent}
+  .drop.open .dropmenu{display:flex;flex-direction:column}
+  .hero{position:relative;padding:26px 0 28px;background:#cabaa5!important;color:#fff;overflow:hidden}
+  .hero::before{content:"";position:absolute;left:0;right:0;bottom:0;height:42%;background:linear-gradient(180deg,rgba(202,186,165,0) 0%,rgba(202,186,165,.12) 10%,rgba(8,15,26,.20) 100%),url('https://jwcarpetcare.co.uk/wp-content/uploads/2025/09/77f0c7f2-07ff-48fc-8678-e49799e99ddf.png') center 72%/cover no-repeat;opacity:1;pointer-events:none}
+  .hero-grid{display:grid;grid-template-columns:1fr;gap:18px;align-items:start;position:relative;z-index:1}
+  .hero-copy{padding:0;margin:0;max-width:none}
+  .hero h1{font-size:clamp(24px,9vw,38px)!important;line-height:1.04;margin:0 0 14px;max-width:11ch;text-shadow:none}
+  .hero p{font-size:15px;line-height:1.55;margin:0 0 14px;max-width:none;color:rgba(255,255,255,.96);text-shadow:none}
+  .ticks{display:grid;grid-template-columns:1fr;gap:10px;margin:0 0 18px}
+  .ticks span{padding:12px 14px;font-size:14px;border-radius:16px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(2px)}
+  .actions{display:grid;grid-template-columns:1fr;gap:12px;margin:0 0 190px}
+  .actions .btn{width:100%;text-align:center;padding:16px 18px;border-radius:18px;font-size:16px}
+  .proof-strip{display:none}
+  .formcard{padding:20px;border-radius:24px;background:#fff;color:#0f172a;box-shadow:0 14px 34px rgba(15,23,42,.12)}
+  .formcard h2{font-size:30px;line-height:1.04;margin-bottom:10px;color:#0f172a}
+  .formcard p{font-size:15px;line-height:1.5;color:#475569}
+  .formgrid{gap:10px}
+  .formgrid input,.formgrid select,.formgrid textarea{font-size:16px;padding:14px 14px;border-radius:14px}
+  .contact-mini{display:grid;gap:8px}
+  .contact-mini a{font-size:14px}
+  .section{padding:38px 0}
+  .cards{grid-template-columns:1fr!important;gap:16px}
+  .review-row{grid-template-columns:1fr!important;gap:16px}
+  .town-grid{grid-template-columns:1fr!important;gap:16px}
+  .split,.content,.row{grid-template-columns:1fr!important;display:grid;gap:18px}
+  .mapwrap iframe{height:260px}
+  .floating{right:14px;bottom:14px}
+  .float-btn{width:58px;height:58px;font-size:24px}
+}
+@media (max-width: 420px){
+  .hero{padding-top:22px}
+  .brand img{height:48px}
+  .nav{min-height:70px}
+  .hero h1{font-size:22px!important;max-width:12ch}
+  .hero p{font-size:14px}
+  .actions{margin-bottom:170px}
+  .ticks span{font-size:13px;padding:11px 12px}
+  .formcard{padding:18px;border-radius:22px}
+  .formcard h2{font-size:24px}
+}
+
+
+/* v5 mobile hero cleanup */
+@media (max-width: 760px){
+  .hero::before{background:linear-gradient(180deg,rgba(202,186,165,0) 0%,rgba(202,186,165,.04) 12%,rgba(8,15,26,.12) 100%),url('https://jwcarpetcare.co.uk/wp-content/uploads/2025/09/77f0c7f2-07ff-48fc-8678-e49799e99ddf.png') center 72%/cover no-repeat!important}
+  .hero-copy{background:transparent!important;padding:0!important;border-radius:0!important;backdrop-filter:none!important}
+  .ticks span{background:transparent!important;backdrop-filter:none!important;border:1px solid rgba(255,255,255,.26)!important}
+  .ticks span:nth-child(n+3){display:none!important}
+  .hero{background:#cabaa5!important;padding:20px 0 14px!important}
+  .hero h1{font-size:clamp(22px,8vw,32px)!important;line-height:1.08!important;max-width:12ch!important}
+  .hero p{font-size:14px!important;line-height:1.52!important}
+  .actions{margin:12px 0 140px!important}
+}
+@media (max-width: 420px){
+  .hero{padding-top:18px!important}
+  .hero h1{font-size:20px!important;max-width:13ch!important}
+  .actions{margin-bottom:120px!important}
+}
+
+
+/* v6 mobile hero hard reset */
+@media (max-width: 768px){
+  .topbar{display:none!important}
+  header{position:sticky;top:0;background:#0f1b38!important;backdrop-filter:none!important}
+  .hero{background:#cabaa5!important;padding:22px 0 18px!important;color:#fff!important}
+  .hero::before{display:none!important;content:none!important;background:none!important}
+  .hero-grid{gap:16px!important}
+  .hero-copy{background:transparent!important;padding:0!important;border:none!important;box-shadow:none!important;backdrop-filter:none!important}
+  .hero h1{font-size:clamp(22px,8.2vw,34px)!important;line-height:1.08!important;max-width:12ch!important;margin:0 0 12px!important}
+  .hero p{font-size:14px!important;line-height:1.55!important;margin:0 0 12px!important;color:rgba(255,255,255,.95)!important}
+  .ticks{display:grid!important;gap:10px!important;margin:10px 0 14px!important}
+  .ticks span{background:rgba(255,255,255,.08)!important;border:1px solid rgba(255,255,255,.18)!important;backdrop-filter:none!important;padding:12px 14px!important}
+  .actions{display:grid!important;grid-template-columns:1fr!important;gap:12px!important;margin-top:12px!important}
+  .actions .btn{width:100%!important;justify-content:center!important}
+  .proof{display:none!important}
+  .formcard{margin-top:4px!important}
+}
+@media (max-width: 480px){
+  .hero{padding:18px 0 14px!important}
+  .hero h1{font-size:20px!important;max-width:13ch!important}
+  .hero p{font-size:13px!important}
+  .ticks span{font-size:13px!important;padding:11px 13px!important}
+}
