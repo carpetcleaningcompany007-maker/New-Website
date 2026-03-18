@@ -115,3 +115,80 @@ header{position:sticky;top:0;z-index:60;background:rgba(15,23,42,.94);backdrop-f
   .service-tile{grid-template-columns:1fr}
   .hero{padding-top:68px}
 }
+
+
+/* Mobile and tablet polish */
+html,body{overflow-x:hidden}
+.menu a,.dropbtn{touch-action:manipulation}
+.formgrid button,.btn{border:0;cursor:pointer}
+.topbar a{word-break:break-word}
+.hero-copy,.formcard,.town-card,.review,.card,.mini-card,.town-section,.sidebox,.cta-panel{min-width:0}
+
+@media (max-width:1100px){
+  .brand img{height:60px}
+  .menu>a,.dropbtn{padding:11px 12px;font-size:14px}
+  .hero{padding:72px 0 56px;background-position:center center}
+  .hero h1{font-size:clamp(34px,6vw,54px)}
+}
+
+@media (max-width:760px){
+  body{line-height:1.55}
+  .topbar{font-size:12px}
+  .topbar .container{padding:8px 0;gap:8px;justify-content:center;text-align:center}
+  .top-actions{justify-content:center;gap:10px}
+  header{position:sticky;top:0}
+  .nav{padding:10px 0;gap:12px;position:relative}
+  .brand img{height:46px;width:auto}
+  .mobile-toggle{display:block;padding:10px 14px;font-weight:700;min-width:84px}
+  .menu{display:none}
+  .menu.open{display:flex;flex-direction:column;align-items:stretch;position:absolute;top:100%;left:0;right:0;background:#0f172a;padding:12px;border-radius:18px;border:1px solid rgba(255,255,255,.08);box-shadow:0 20px 40px rgba(2,8,23,.28);z-index:90;max-height:calc(100vh - 92px);overflow:auto}
+  .menu>a,.dropbtn{width:100%;text-align:left;padding:14px 16px;border-radius:14px;font-size:16px}
+  .drop{width:100%}
+  .dropmenu{background:#0b1223;border-color:rgba(255,255,255,.08);box-shadow:none;padding:8px}
+  .dropmenu a{color:#e5eefb;padding:12px 14px}
+  .dropmenu a:hover{background:rgba(255,255,255,.06)}
+  .hero{padding:46px 0 34px;background:linear-gradient(90deg,rgba(15,23,42,.08),rgba(15,23,42,.04)),url('https://jwcarpetcare.co.uk/wp-content/uploads/2025/09/77f0c7f2-07ff-48fc-8678-e49799e99ddf.png') center center/cover no-repeat}
+  .hero-grid{gap:18px}
+  .hero h1{font-size:clamp(30px,10vw,42px);line-height:1.04;margin-bottom:12px}
+  .hero p{font-size:16px;max-width:none;margin:0}
+  .ticks{gap:10px;margin:18px 0}
+  .ticks span{padding:11px 12px;font-size:14px}
+  .actions{gap:10px;margin:18px 0}
+  .actions .btn{flex:1 1 100%;text-align:center;padding:14px 16px}
+  .proof-strip div{padding:14px}
+  .formcard{padding:18px;border-radius:20px}
+  .formgrid input,.formgrid textarea,.formgrid select{padding:13px;font-size:16px}
+  .contact-mini{gap:8px}
+  .section{padding:44px 0}
+  .section h2{font-size:clamp(26px,8vw,34px)}
+  .lead,.page-hero p{font-size:15px}
+  .cards,.cards.three,.town-grid,.review-row,.review-row.three,.gallery,.benefit-grid,.area-list,.link-grid,.service-grid,.ticks,.proof-strip{grid-template-columns:1fr}
+  .card,.review,.town-card,.town-section,.sidebox,.cta-panel{border-radius:18px}
+  .card img,.mini-card img{height:200px}
+  .review-row{gap:14px}
+  .split,.content{grid-template-columns:1fr;gap:18px}
+  .page-hero{padding:36px 0 28px}
+  .breadcrumbs{font-size:13px}
+  .image-banner img{height:240px}
+  .mapwrap iframe{height:300px;border-radius:18px}
+  .service-tile{grid-template-columns:1fr}
+  .service-tile img{height:220px;min-height:0}
+  .service-tile h3,.service-tile p{padding-left:16px}
+  .town-section{padding:20px}
+  .town-section-header{gap:12px}
+  .link-grid,.area-list{gap:10px}
+  .footer{padding:36px 0 16px}
+  .footer-grid{grid-template-columns:1fr;gap:18px}
+  .floating{right:14px;bottom:14px}
+  .float-btn{width:56px;height:56px;font-size:26px}
+}
+
+@media (max-width:420px){
+  .container{width:min(1200px,94vw)}
+  .hero{padding-top:40px}
+  .hero h1{font-size:30px}
+  .btn{font-size:15px}
+  .proof-strip strong{font-size:17px}
+  .card img,.mini-card img,.gallery img,.service-tile img{height:190px}
+  .mapwrap iframe{height:260px}
+}
