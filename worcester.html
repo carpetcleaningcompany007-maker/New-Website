@@ -57,8 +57,8 @@
     overflow:hidden;
     padding:86px 0 74px;
     background:
-      linear-gradient(135deg, rgba(15,23,42,.92), rgba(22,58,140,.85)),
-      url("https://images.unsplash.com/photo-1497366412874-3415097a27e7?q=80&w=1800&auto=format&fit=crop") center/cover no-repeat;
+      linear-gradient(135deg, rgba(15,23,42,.84), rgba(22,58,140,.78)),
+      url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1800&auto=format&fit=crop") center center/cover no-repeat;
     color:#fff;
   }
 
@@ -416,7 +416,9 @@
   }
 
   .premium-panel h2,
-  .cta-lux h2{
+  .cta-lux h2,
+  .map-card h2,
+  .seo-local-card h2{
     margin:0 0 14px;
     color:var(--lux-navy);
     font-size:2rem;
@@ -424,7 +426,9 @@
   }
 
   .premium-panel p,
-  .cta-lux p{
+  .cta-lux p,
+  .map-card p,
+  .seo-local-card p{
     margin:0 0 22px;
     color:var(--lux-muted);
     line-height:1.8;
@@ -528,12 +532,76 @@
     font-size:1.05rem;
   }
 
+  .seo-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+  }
+
+  .map-card,
+  .seo-local-card{
+    background:#fff;
+    border:1px solid var(--lux-line);
+    border-radius:28px;
+    box-shadow:var(--lux-shadow);
+    padding:34px;
+  }
+
+  .map-frame{
+    overflow:hidden;
+    border-radius:20px;
+    border:1px solid var(--lux-line);
+    margin-bottom:18px;
+  }
+
+  .map-frame iframe{
+    width:100%;
+    height:360px;
+    border:0;
+    display:block;
+  }
+
+  .map-link{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+    font-weight:800;
+    color:var(--lux-blue);
+  }
+
+  .seo-places{
+    display:grid;
+    gap:16px;
+  }
+
+  .seo-place{
+    padding:18px 18px;
+    border:1px solid var(--lux-line);
+    border-radius:18px;
+    background:linear-gradient(180deg, #ffffff, #f8fbff);
+  }
+
+  .seo-place h3{
+    margin:0 0 8px;
+    color:var(--lux-navy);
+    font-size:1.1rem;
+  }
+
+  .seo-place p{
+    margin:0;
+    color:var(--lux-muted);
+    line-height:1.7;
+    font-size:15px;
+  }
+
   @media (max-width: 1100px){
     .hero-grid,
     .dual-panel,
     .service-grid,
     .stats-wrap,
-    .area-grid{
+    .area-grid,
+    .seo-grid{
       grid-template-columns:repeat(2, minmax(0,1fr));
     }
   }
@@ -547,7 +615,8 @@
     .dual-panel,
     .service-grid,
     .stats-wrap,
-    .area-grid{
+    .area-grid,
+    .seo-grid{
       grid-template-columns:1fr;
     }
 
@@ -561,12 +630,18 @@
 
     .premium-panel,
     .cta-lux,
-    .hero-card{
+    .hero-card,
+    .map-card,
+    .seo-local-card{
       padding:24px;
     }
 
     .lux-section{
       padding:68px 0;
+    }
+
+    .map-frame iframe{
+      height:300px;
     }
   }
 </style>
@@ -754,7 +829,7 @@
     <div class="container">
       <div class="section-intro">
         <h2>Worcester and nearby areas</h2>
-        <p>Start with your part of Worcester, then move into the service you need. This section now looks cleaner, feels more premium and is laid out properly for nearby coverage.</p>
+        <p>Start with your part of Worcester, then move into the service you need. This section is laid out properly for nearby coverage and gives visitors a clearer path through the site.</p>
       </div>
 
       <div class="area-grid">
@@ -802,12 +877,12 @@
       <div class="dual-panel">
         <div class="premium-panel">
           <h2>Professional cleaning with a more premium finish</h2>
-          <p>This Worcester page has been rebuilt to feel more like a high end service page rather than a basic local page. It now has stronger structure, cleaner spacing, better clickable service blocks and a much more polished presentation overall.</p>
+          <p>This Worcester page now has stronger structure, cleaner spacing, fully clickable service blocks and a much more polished presentation overall for both users and search visibility.</p>
           <div class="premium-list">
-            <div><i class="fa-solid fa-check"></i><span>Full width hero section with stronger visual impact</span></div>
-            <div><i class="fa-solid fa-check"></i><span>Service cards that feel premium and actually work properly as links</span></div>
-            <div><i class="fa-solid fa-check"></i><span>Nearby area coverage laid out as proper cards instead of cramped narrow boxes</span></div>
-            <div><i class="fa-solid fa-check"></i><span>Cleaner calls to action so people know exactly where to click next</span></div>
+            <div><i class="fa-solid fa-check"></i><span>Large hero section with stronger visual impact</span></div>
+            <div><i class="fa-solid fa-check"></i><span>Service cards that look cleaner and work properly as links</span></div>
+            <div><i class="fa-solid fa-check"></i><span>Nearby area coverage laid out as proper cards</span></div>
+            <div><i class="fa-solid fa-check"></i><span>Better calls to action so people know where to click next</span></div>
           </div>
         </div>
 
@@ -832,9 +907,54 @@
 
   <section class="lux-section" style="padding-top:0;">
     <div class="container">
+      <div class="seo-grid">
+        <div class="map-card">
+          <h2>Carpet cleaning in Worcester</h2>
+          <p>If you are looking for carpet cleaning in Worcester, this map section helps reinforce local relevance and gives visitors a quick way to open Worcester in maps.</p>
+          <div class="map-frame">
+            <iframe
+              src="https://www.google.com/maps?q=Worcester%20UK&z=12&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Map of Worcester">
+            </iframe>
+          </div>
+          <a class="map-link" href="https://www.google.com/maps?q=Worcester%20UK" target="_blank" rel="noopener">
+            <i class="fa-solid fa-map-location-dot"></i> Open Worcester in Google Maps
+          </a>
+        </div>
+
+        <div class="seo-local-card">
+          <h2>Things to do in Worcester</h2>
+          <p>This gives the page a bit more local depth and makes it feel more tied to Worcester rather than being a thin service page.</p>
+          <div class="seo-places">
+            <div class="seo-place">
+              <h3>Worcester Cathedral</h3>
+              <p>One of the best known landmarks in Worcester and a well known part of the city centre, making it a strong local reference point for nearby homes and businesses.</p>
+            </div>
+            <div class="seo-place">
+              <h3>The Commandery</h3>
+              <p>A historic Worcester attraction that helps tie the page more closely to the local area and gives extra place relevance for Worcester based searches.</p>
+            </div>
+            <div class="seo-place">
+              <h3>River Severn walks</h3>
+              <p>The riverfront is one of the most recognisable parts of Worcester and adds another strong local signal for visitors looking for a genuinely Worcester focused service page.</p>
+            </div>
+            <div class="seo-place">
+              <h3>Worcester city centre</h3>
+              <p>From shops and cafés to residential streets and nearby businesses, Worcester city centre is a key area for domestic and commercial carpet cleaning work.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lux-section" style="padding-top:0;">
+    <div class="container">
       <div class="local-copy">
         <h2>Local carpet cleaning in Worcester that feels properly thought through</h2>
-        <p>Whether you are looking for carpet cleaning in Worcester, upholstery cleaning, stain removal treatments or commercial carpet cleaning, this page now gives visitors a much cleaner journey through the site. It feels more substantial, more trustworthy and more like a premium business rather than a basic local landing page.</p>
+        <p>Whether you are looking for carpet cleaning in Worcester, upholstery cleaning, stain removal treatments or commercial carpet cleaning, this page now gives visitors a much cleaner journey through the site. It feels more substantial, more trustworthy and more like a premium local business page.</p>
       </div>
     </div>
   </section>
