@@ -53,218 +53,40 @@
   }
 
   .worcester-hero{
-    position:relative;
-    overflow:hidden;
-    padding:96px 0 82px;
+    background:#17386f;
     color:#fff;
-    min-height:680px;
-    display:flex;
-    align-items:center;
-  }
-
-  .hero-video{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    z-index:0;
-  }
-
-  .worcester-hero::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:linear-gradient(90deg, rgba(15,23,42,.62) 0%, rgba(15,23,42,.28) 40%, rgba(15,23,42,.16) 62%, rgba(15,23,42,.28) 100%);
-    pointer-events:none;
-    z-index:1;
-  }
-
-  .worcester-hero .container{
-    position:relative;
-    z-index:2;
+    padding:52px 0 46px;
   }
 
   .hero-breadcrumbs{
     color:rgba(255,255,255,.92);
     font-size:14px;
-    margin-bottom:18px;
-    text-shadow:0 2px 12px rgba(0,0,0,.35);
+    margin-bottom:12px;
   }
 
   .hero-breadcrumbs a{
     color:rgba(255,255,255,.92);
+    text-decoration:none;
   }
 
-  .hero-grid{
-    display:grid;
-    grid-template-columns:1.2fr .88fr;
-    gap:30px;
-    align-items:start;
+  .hero-copy{
+    max-width:980px;
   }
 
   .hero-copy h1{
-    margin:0 0 18px;
-    font-size:clamp(2.4rem,4.8vw,4.1rem);
-    line-height:1.02;
+    margin:0 0 16px;
+    font-size:clamp(2.4rem,4.8vw,4rem);
+    line-height:1.05;
     letter-spacing:-.03em;
-    max-width:760px;
-    text-shadow:0 4px 24px rgba(0,0,0,.35);
+    color:#fff;
   }
 
   .hero-copy p{
-    margin:0 0 26px;
+    margin:0;
     color:rgba(255,255,255,.96);
-    font-size:1.1rem;
-    line-height:1.75;
-    max-width:760px;
-    text-shadow:0 3px 18px rgba(0,0,0,.30);
-  }
-
-  .hero-actions{
-    display:flex;
-    flex-wrap:wrap;
-    gap:14px;
-    margin-bottom:26px;
-  }
-
-  .hero-btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    min-height:54px;
-    padding:0 22px;
-    border-radius:999px;
-    text-decoration:none;
-    font-weight:700;
-    transition:all .22s ease;
-  }
-
-  .hero-btn.primary{
-    background:linear-gradient(135deg, var(--lux-gold), #f7b733);
-    color:#111827;
-    box-shadow:0 14px 36px rgba(245,158,11,.30);
-  }
-
-  .hero-btn.primary:hover{
-    transform:translateY(-2px);
-    box-shadow:0 18px 40px rgba(245,158,11,.36);
-  }
-
-  .hero-btn.secondary{
-    color:#fff;
-    border:1px solid rgba(255,255,255,.34);
-    background:rgba(255,255,255,.10);
-    backdrop-filter:blur(8px);
-  }
-
-  .hero-btn.secondary:hover{
-    background:rgba(255,255,255,.16);
-    transform:translateY(-2px);
-  }
-
-  .hero-points{
-    display:flex;
-    flex-wrap:wrap;
-    gap:18px 26px;
-    color:rgba(255,255,255,.96);
-    font-size:15px;
-    text-shadow:0 3px 18px rgba(0,0,0,.28);
-  }
-
-  .hero-points span{
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-  }
-
-  .hero-points i{
-    color:#fbbf24;
-  }
-
-  .hero-form-card{
-    background:rgba(255,255,255,.96);
-    border:1px solid rgba(255,255,255,.68);
-    border-radius:28px;
-    padding:28px;
-    box-shadow:0 20px 60px rgba(0,0,0,.22);
-    color:var(--lux-navy);
-    backdrop-filter:blur(8px);
-  }
-
-  .hero-form-card h2{
-    margin:0 0 10px;
-    font-size:1.5rem;
-    color:var(--lux-navy);
-  }
-
-  .hero-form-card p{
-    margin:0 0 18px;
-    color:var(--lux-muted);
+    font-size:1.08rem;
     line-height:1.7;
-  }
-
-  .hero-form{
-    display:grid;
-    gap:12px;
-  }
-
-  .hero-form .row-2{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px;
-  }
-
-  .hero-form input,
-  .hero-form select,
-  .hero-form textarea{
-    width:100%;
-    min-height:52px;
-    border:1px solid #d7e1ee;
-    border-radius:14px;
-    padding:14px 14px;
-    font:inherit;
-    color:var(--lux-text);
-    background:#fff;
-    outline:none;
-    transition:border-color .2s ease, box-shadow .2s ease;
-    box-sizing:border-box;
-  }
-
-  .hero-form textarea{
-    min-height:110px;
-    resize:vertical;
-  }
-
-  .hero-form input:focus,
-  .hero-form select:focus,
-  .hero-form textarea:focus{
-    border-color:#9dbcf5;
-    box-shadow:0 0 0 4px rgba(29,78,216,.10);
-  }
-
-  .hero-form button{
-    min-height:56px;
-    border:none;
-    border-radius:16px;
-    background:linear-gradient(135deg, var(--lux-gold), #f7b733);
-    color:#111827;
-    font:inherit;
-    font-weight:800;
-    cursor:pointer;
-    transition:transform .2s ease, box-shadow .2s ease;
-    box-shadow:0 14px 36px rgba(245,158,11,.24);
-  }
-
-  .hero-form button:hover{
-    transform:translateY(-2px);
-    box-shadow:0 18px 40px rgba(245,158,11,.30);
-  }
-
-  .hero-form-note{
-    font-size:13px;
-    color:var(--lux-muted);
-    line-height:1.6;
+    max-width:900px;
   }
 
   .lux-section{
@@ -634,33 +456,25 @@
   }
 
   @media (max-width: 1100px){
-    .hero-grid,
-    .dual-panel,
     .service-grid,
     .stats-wrap,
     .area-grid,
-    .seo-grid{
+    .seo-grid,
+    .dual-panel{
       grid-template-columns:repeat(2, minmax(0,1fr));
     }
   }
 
   @media (max-width: 760px){
     .worcester-hero{
-      padding:72px 0 58px;
-      min-height:auto;
+      padding:42px 0 38px;
     }
 
-    .worcester-hero::before{
-      background:linear-gradient(180deg, rgba(15,23,42,.60) 0%, rgba(15,23,42,.30) 58%, rgba(15,23,42,.54) 100%);
-    }
-
-    .hero-grid,
-    .dual-panel,
     .service-grid,
     .stats-wrap,
     .area-grid,
     .seo-grid,
-    .hero-form .row-2{
+    .dual-panel{
       grid-template-columns:1fr;
     }
 
@@ -674,7 +488,6 @@
 
     .premium-panel,
     .cta-lux,
-    .hero-form-card,
     .map-card,
     .seo-local-card{
       padding:24px;
@@ -740,59 +553,14 @@
   </header>
 
   <section class="worcester-hero">
-    <video class="hero-video" autoplay muted loop playsinline preload="metadata">
-      <source src="assets/video/carpet.mp4" type="video/mp4">
-    </video>
-
     <div class="container">
       <div class="hero-breadcrumbs">
         <a href="index.html">Home</a> / <a href="areas.html">Areas</a> / Worcester
       </div>
 
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <h1>Professional Carpet Cleaning in Worcester</h1>
-          <p>JW Carpet Care provides professional carpet cleaning in Worcester for homes, flats, rental properties and commercial spaces that need a proper deep clean, honest advice and a finish that looks noticeably better from the moment you walk in.</p>
-
-          <div class="hero-actions">
-            <a class="hero-btn primary" href="tel:07838231389">Call now</a>
-            <a class="hero-btn secondary" href="https://wa.me/447838231389" target="_blank" rel="noopener">WhatsApp us</a>
-          </div>
-
-          <div class="hero-points">
-            <span><i class="fa-solid fa-check"></i> Domestic and commercial work</span>
-            <span><i class="fa-solid fa-check"></i> Fast local response in Worcester</span>
-            <span><i class="fa-solid fa-check"></i> Honest advice on the right clean</span>
-          </div>
-        </div>
-
-        <aside class="hero-form-card">
-          <h2>Get your Worcester quote</h2>
-          <p>Fill this in and continue to the main quote form.</p>
-
-          <form class="hero-form" id="heroQuoteForm">
-            <div class="row-2">
-              <input type="text" id="heroName" name="name" placeholder="Your name" required>
-              <input type="tel" id="heroPhone" name="phone" placeholder="Phone number" required>
-            </div>
-
-            <div class="row-2">
-              <input type="text" id="heroPostcode" name="postcode" placeholder="Postcode">
-              <select id="heroService" name="service" required>
-                <option value="">Select service</option>
-                <option>Carpet Cleaning</option>
-                <option>Upholstery Cleaning</option>
-                <option>Stain Removal</option>
-                <option>Commercial Cleaning</option>
-              </select>
-            </div>
-
-            <textarea id="heroMessage" name="message" placeholder="Tell us what needs cleaning"></textarea>
-
-            <button type="submit">Continue to full quote form</button>
-            <div class="hero-form-note">This sends people straight into the main quote journey on your home page.</div>
-          </form>
-        </aside>
+      <div class="hero-copy">
+        <h1>Professional Carpet Cleaning in Worcester</h1>
+        <p>JW Carpet Care provides professional carpet cleaning in Worcester for homes, flats, rental properties and commercial spaces that need a proper deep clean, honest advice and a finish that looks noticeably better from the moment you walk in.</p>
       </div>
     </div>
   </section>
@@ -1047,25 +815,5 @@
   </div>
 
   <script src="assets/script.js"></script>
-  <script>
-    document.getElementById('heroQuoteForm').addEventListener('submit', function(e){
-      e.preventDefault();
-
-      const quoteData = {
-        name: document.getElementById('heroName').value || '',
-        phone: document.getElementById('heroPhone').value || '',
-        postcode: document.getElementById('heroPostcode').value || '',
-        service: document.getElementById('heroService').value || '',
-        message: document.getElementById('heroMessage').value || '',
-        sourcePage: 'Worcester'
-      };
-
-      try {
-        sessionStorage.setItem('jwQuoteLead', JSON.stringify(quoteData));
-      } catch (err) {}
-
-      window.location.href = 'index.html#quote';
-    });
-  </script>
 </body>
 </html>
