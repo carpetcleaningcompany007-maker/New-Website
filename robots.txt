@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://carpetcleaningcompany007-maker.github.io/New-Website/sitemap.xml
