@@ -139,14 +139,37 @@ header{position:sticky;top:0;z-index:50;background:rgba(15,23,42,.94);backdrop-f
 .town-hero h1{font-size:clamp(2.35rem,5vw,4.35rem)!important;line-height:1.02!important;max-width:820px}
 .town-hero p{max-width:760px!important;color:#f1f5f9!important}
 @media(max-width:820px){
-  .hero-grid{min-height:620px!important;padding:42px 0!important}
-  .hero-copy h1{font-size:2.35rem!important;max-width:12em!important}
+  .hero{
+    background:linear-gradient(180deg,rgba(8,15,31,.20) 0%,rgba(8,15,31,.54) 46%,rgba(8,15,31,.86) 100%),url('https://jwcarpetcare.co.uk/wp-content/uploads/2025/10/ChatGPT-Image-Oct-11-2025-12_16_09-AM.png') center top/cover no-repeat!important;
+  }
+  .hero-grid{min-height:540px!important;padding:34px 0 32px!important;align-content:end!important}
+  .hero-copy{padding-top:132px!important}
+  .hero-copy h1{font-size:1.95rem!important;line-height:1.06!important;max-width:11.5em!important;text-shadow:0 3px 16px rgba(0,0,0,.55)}
+  .hero-guarantee{margin-top:14px!important;background:rgba(15,23,42,.58)!important;border-color:rgba(255,255,255,.38)!important;box-shadow:0 10px 28px rgba(0,0,0,.18)}
+  .hero .actions{
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    gap:10px!important;
+    margin-top:16px!important;
+  }
+  .hero .actions .btn{
+    width:auto!important;
+    min-height:46px;
+    padding:12px 10px!important;
+    border-radius:14px!important;
+    font-size:.92rem!important;
+    line-height:1.1!important;
+    box-shadow:0 12px 26px rgba(245,158,11,.20);
+  }
+  .hero .actions .btn:first-child{display:none!important}
   .hero .ticks{display:none!important}
   .town-hero .container{min-height:430px;padding:44px 0 42px}
   .town-hero h1{font-size:2.35rem!important}
 }
 @media(max-width:520px){
-  .hero-copy h1{font-size:1.95rem!important}
+  .hero-grid{min-height:520px!important}
+  .hero-copy{padding-top:118px!important}
+  .hero-copy h1{font-size:1.82rem!important}
   .town-hero .container{min-height:380px;padding:38px 0 36px}
   .town-hero h1{font-size:1.95rem!important}
 .town-hero p{display:-webkit-box!important;-webkit-line-clamp:3!important;-webkit-box-orient:vertical!important;overflow:hidden!important}
@@ -323,6 +346,37 @@ header{position:sticky;top:0;z-index:50;background:rgba(15,23,42,.94);backdrop-f
   .mobile-quote-section .guarantee-badge strong,
   .mobile-quote-section .quote-points span{
     color:#334155;
+  }
+  .mobile-quote-section .mobile-quote-card{
+    position:relative;
+    border:2px solid #f59e0b;
+    box-shadow:0 24px 52px rgba(15,23,42,.18),0 0 0 6px rgba(245,158,11,.10);
+  }
+  .mobile-quote-section .mobile-quote-card:before{
+    content:"";
+    position:absolute;
+    left:18px;
+    right:18px;
+    top:0;
+    height:5px;
+    background:#f59e0b;
+    border-radius:0 0 999px 999px;
+  }
+  .mobile-quote-section .mobile-quote-card h2{
+    font-size:1.75rem;
+    line-height:1.1;
+  }
+  .mobile-quote-section .mobile-quote-card .form-note{
+    background:#fff7ed;
+    border:1px solid #fed7aa;
+    border-radius:12px;
+    padding:10px 12px;
+    color:#7c2d12;
+  }
+  .mobile-quote-section .mobile-quote-card .btn{
+    min-height:54px;
+    font-size:1rem;
+    box-shadow:0 14px 28px rgba(245,158,11,.28);
   }
 }
 @media(max-width:640px){
