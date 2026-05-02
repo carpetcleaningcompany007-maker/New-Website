@@ -240,16 +240,29 @@ header{position:sticky;top:0;z-index:50;background:rgba(15,23,42,.94);backdrop-f
 .guarantee-badge strong{color:#fff;font-size:1.03rem}
 .guarantee-badge span{color:#dbeafe;line-height:1.55}
 .quote-section .mobile-quote-card{
+  position:relative;
   max-width:none;
   border-radius:18px;
   padding:32px;
-  box-shadow:0 28px 70px rgba(15,23,42,.22);
+  border:2px solid #f59e0b;
+  box-shadow:0 30px 70px rgba(15,23,42,.20),0 0 0 8px rgba(245,158,11,.10);
+  overflow:hidden;
+}
+.quote-section .mobile-quote-card:before{
+  content:"";
+  position:absolute;
+  left:24px;
+  right:24px;
+  top:0;
+  height:6px;
+  background:linear-gradient(90deg,#f59e0b,#fbbf24);
+  border-radius:0 0 999px 999px;
 }
 .quote-section .formgrid{
   grid-template-columns:repeat(2,minmax(0,1fr));
   gap:14px;
 }
-.quote-section .form-note,.quote-section textarea,.quote-section .form-status,.quote-section button{grid-column:1/-1}
+.quote-section .form-note,.quote-section select,.quote-section textarea,.quote-section .form-status,.quote-section button{grid-column:1/-1}
 .quote-section textarea{min-height:110px}
 .service-cards{grid-template-columns:repeat(6,minmax(0,1fr))!important}
 .service-card,.service-card:nth-child(4),.service-card:nth-child(5),.service-card:nth-child(6){grid-column:span 2!important}
